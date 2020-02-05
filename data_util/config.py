@@ -4,10 +4,10 @@ root_dir = os.path.expanduser("~/KPG_Project")
 
 #train_data_path = os.path.join(root_dir, "kp20k_finished_files/train.bin")
 train_data_path = os.path.join(root_dir, "kp20k_finished_files/chunked/train_*")
-eval_data_path = os.path.join(root_dir, "kp20k_finished_files/test.bin")
+eval_data_path = os.path.join(root_dir, "kp20k_finished_files/eval.bin")
 decode_data_path = os.path.join(root_dir, "kp20k_finished_files/test.bin")
 vocab_path = os.path.join(root_dir, "kp20k_finished_files/vocab")
-log_root = os.path.join(root_dir, "log/")
+log_root = os.path.join(root_dir, "log/kp20k")
 
 # Hyperparameters
 hidden_dim= 256

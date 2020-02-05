@@ -139,7 +139,7 @@ class Train(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Train script")
-    parser.add_argument('--model_file', default='../models')
+    parser.add_argument('--model_file_path', default=None)
     args = parser.parse_args()
     
     train_processor = Train()

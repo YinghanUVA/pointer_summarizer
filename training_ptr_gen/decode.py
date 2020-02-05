@@ -17,7 +17,7 @@ from data_util.batcher import Batcher
 from data_util.data import Vocab
 from data_util import data, config
 from model import Model
-from data_util.utils import write_for_rouge, rouge_eval, rouge_log
+from data_util.utils import write_for_rouge # , rouge_eval, rouge_log
 from train_util import get_input_from_batch
 
 
@@ -101,8 +101,8 @@ class BeamSearch(object):
 
         print("Decoder has finished reading dataset for single_pass.")
         print("Now starting ROUGE eval...")
-        results_dict = rouge_eval(self._rouge_ref_dir, self._rouge_dec_dir)
-        rouge_log(results_dict, self._decode_dir)
+        # results_dict = rouge_eval(self._rouge_ref_dir, self._rouge_dec_dir)
+        # rouge_log(results_dict, self._decode_dir)
 
 
     def beam_search(self, batch):
