@@ -1,2 +1,3 @@
 export PYTHONPATH=`pwd`
-python training_ptr_gen/train.py
+module load gcc
+python training_ptr_gen/train.py >& ../log/training_log &
